@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ept-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Gerenciador Papafila</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Gerenciador de Cartões</h1>
+    </header>
+    <main>
+      <div class="card">
+        <p>
+          <label for="matricula">Matrícula</label><br />
+          <input type="number" id="matricula" /><br />
+          <!-- <button type="button" id="botaom">Verificar</button> -->
+        </p>
+        <br />
+        <br />
+        <p>
+          <label for="retirarcartoes">Retirar</label><br />
+          <input type="number" id="retirarcartoes" max="10" min="1" /><br />
+          <button type="button" id="botaor">Salvar</button>
+        </p>
+        <br /><br />
+        <br />
+        <p>
+          <label for="devolvercartoes">Devolver</label><br />
+          <input type="number" id="devolvercartoes" max="10" min="1" /><br />
+          <button type="button" id="botaod">Salvar</button>
+        </p>
+
+        <p>Quantidade disponível : <strong id="respostaqtd">10</strong></p>
+      </div>
+    </main>
+
+    <table id="tabela"></table>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
