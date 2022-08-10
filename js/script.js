@@ -21,8 +21,12 @@ function start() {
 }
 
 function acionar() {
-  tabelaAutomaticaD();
-  tabelaAutomaticaR();
+  if (dados.matricula[0] === 0 || dados.retirada[0] === 0 || dados.devolucao[0] === 0) {
+    return;
+  } else {
+    tabelaAutomaticaD();
+    tabelaAutomaticaR();
+  }
 }
 
 function lerLs() {
@@ -168,7 +172,7 @@ function tabelaAutomaticaR() {
   trMofiu.appendChild(tdTrretirada);
 }
 
-function puxaEstoque() {}
+function puxaEstoque() { }
 
 /*function actionButtonm() {
   var inputMatricula = document.querySelector('#matricula');
